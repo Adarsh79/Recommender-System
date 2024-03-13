@@ -34,7 +34,7 @@ if choice == "Profiling":
     if st.button("Generate Profiling Report"):
         if "df" in locals():
             profile = df.describe()
-            st.write(profile, use_container_width=True)
+            st.write(profile)
         else:
             st.warning("Please upload a dataset first.")
 
